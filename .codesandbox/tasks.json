@@ -1,0 +1,18 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "pnpm install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "pnpm nx run oce-insights:serve": {
+      "name": "start",
+      "command": "pnpm nx run oce-insights:serve",
+      "runAtStart": true
+    }
+  }
+}
